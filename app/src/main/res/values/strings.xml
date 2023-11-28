@@ -2,4 +2,5 @@
     <string name="app_name">MovieCollection</string>
     <string name="back">Back</string>
     <string name="movie_name">Avengers: End Game</string>
+    <string name="action_adventure_fantasy">Action, Adventure, Fantasy</string>
 </resources>
