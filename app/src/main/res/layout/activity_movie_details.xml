@@ -30,7 +30,7 @@
 
     <ImageView
         android:id="@+id/mask"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:src="@drawable/movie_banner_mask"
@@ -76,29 +76,32 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
         android:layout_marginTop="-48dp"
-        android:paddingStart="@dimen/medium"
         android:text="@string/movie_name"
         android:textColor="@color/my_gray_2"
         android:textSize="40sp"
         android:textStyle="bold"
+        app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/banner" />
 
     <TextView
         android:id="@+id/tag"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="@dimen/medium"
+        android:layout_marginStart="@dimen/medium"
         android:text="@string/action_adventure_fantasy"
         android:textColor="@color/genre"
         android:textSize="@dimen/small2"
+        app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
