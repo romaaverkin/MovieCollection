@@ -3,27 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#191926"
     tools:context=".MovieDetailsActivity">
 
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
     <ImageView
         android:id="@+id/banner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-30dp"
+        android:layout_marginEnd="-125dp"
         android:adjustViewBounds="true"
         android:src="@drawable/movie_banner_full"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/movie_banner_mask"
+        app:layout_constraintBottom_toBottomOf="@+id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/path"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/banner"
         app:srcCompat="@drawable/path" />
 
@@ -38,6 +60,33 @@
         android:textSize="@dimen/small"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="56dp"
+        android:text="13+"
+        android:textColor="@color/my_white"
+        android:textSize="@dimen/small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-48dp"
+        android:paddingStart="@dimen/medium"
+        android:text="@string/movie_name"
+        android:textColor="@color/my_gray_2"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
