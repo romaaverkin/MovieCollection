@@ -165,4 +165,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tag" />
 
+    <TextView
+        android:id="@+id/storyline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storyline"
+        android:textColor="@color/my_gray_2"
+        android:textSize="@dimen/small2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviews"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
