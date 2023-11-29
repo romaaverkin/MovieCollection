@@ -152,16 +152,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tag" />
 
     <TextView
-        app:layout_constrainedWidth="true"
         android:id="@+id/reviews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:layout_marginStart="103dp"
+        android:layout_marginTop="4dp"
         android:text="@string/_125_reviews"
         android:textAllCaps="true"
         android:textColor="@color/my_gray"
         android:textStyle="bold"
+        app:layout_constrainedWidth="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tag" />
 
