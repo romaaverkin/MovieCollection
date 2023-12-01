@@ -179,7 +179,6 @@
         app:layout_constraintTop_toBottomOf="@+id/reviews" />
 
     <TextView
-
         android:id="@+id/description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -191,5 +190,66 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/storyline" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cast"
+        android:textColor="@color/my_gray_2"
+        android:textSize="@dimen/small2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/actors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:constraint_referenced_ids="actor_1, actor_2, actor_3, actor_4, actor_5"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="8dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalGap="8dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <ImageView
+        android:id="@+id/actor_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/actor_1" />
+
+    <ImageView
+        android:id="@+id/actor_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/actor_2" />
+
+    <ImageView
+        android:id="@+id/actor_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/actor_3" />
+
+    <ImageView
+        android:id="@+id/actor_4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/actor_4" />
+
+    <ImageView
+        android:id="@+id/actor_5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/actor_4" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
